@@ -28,7 +28,7 @@ body {
 }
 .container {
   min-width: 320px;
-  height: 40vh;
+  min-height: 35rem;
   padding: 2rem;
   position: relative;
   width: 770px;

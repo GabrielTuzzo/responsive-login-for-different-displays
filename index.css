@@ -305,26 +305,15 @@ footer {
     flex-direction: column;
     justify-content: none;
     width: 370px;
-    height: 65vh;
+    height: 43rem;
   }
   .or {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 15px;
-    margin: 15px 0 20px;
     display: none;
   }
   .line {
-    width: 105px;
-    height: 2px;
-    background: #5c5f63;
     display: none;
   }
   .or p {
-    padding: 10px;
-    font-size: 1.4rem;
-    color: #414549;
     display: none;
   }
   .social-fields {
@@ -341,7 +330,6 @@ footer {
     text-align: center;
   }
   footer {
-    position: absolute;
     margin-left: 17rem;
     bottom: 0;
   }
@@ -366,5 +354,8 @@ footer {
   }
   .social-field-text {
     display: none;
+  }
+  .input-label {
+    padding-right: 80%;
   }
 }

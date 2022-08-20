@@ -12,7 +12,9 @@
 html {
   font-size: 62.5%;
 }
-
+html, body {
+  overflow-x: hidden;
+}
 ::selection {
   background-color: #7790d4;
 }
@@ -37,14 +39,18 @@ body {
 }
 .button {
   position: absolute;
-  left: 31%;
-  top: 40%;
+  left: 36%;
+  top: 43.7%;
   border: none;
   font-size: 1.6rem;
   font-family: "poppins", Arial, Helvetica, sans-serif;
   background-color: rgb(226, 220, 220);
   cursor: pointer;
   outline: none;
+}
+#password {
+  width: 40%;
+  padding-right: 4.8rem;
 }
 h2 {
   text-align: start;
@@ -76,7 +82,9 @@ input:valid ~ label {
 }
 input[type="text"],
 input[type="password"] {
-  padding: 8px;
+  padding-bottom: 8px;
+  padding-right: 8px;
+  padding-left: 2px;
   border: none;
   outline: none;
   padding-top: 20px;
@@ -233,13 +241,16 @@ footer {
   background: linear-gradient(to right, #ffffff, #ffffff);
 }
 /*--------------------------------------------Media Query----------------------------------------------*/
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 820px) {
   .container {
     display: flex;
     flex-direction: column;
     justify-content: none;
     width: 370px;
     height: 45rem;
+  }
+  .input-label {
+    padding-right: 80%;
   }
   .or {
     display: flex;
@@ -284,7 +295,7 @@ footer {
   }
   #password {
     width: 100%;
-    padding-right: 8rem;
+    padding-right: 5rem;
   }
   .input-box .underline::before {
     width: 100%;
@@ -293,7 +304,7 @@ footer {
     width: 100%;
   }
   .button {
-    left: 80%;
+    left: 89%;
   }
   input[type="submit"] {
     width: 100%;
@@ -302,14 +313,69 @@ footer {
     display: none;
   }
 }
-@media only screen and (max-width: 330px) {
+@media only screen and (max-width:400px) {
+  .container {
+    width: 300px;
+  }
   .social-fields {
-    margin-left: -16rem;
+    margin-left: -17rem;
+  }
+  .input-label {
+    padding-right: 70%;
+  }
+  p a {
+    margin-left: -2rem;
+  }
+  h2 {
+    margin-left: 8.7rem;
+  }
+}
+@media only screen and (max-width: 340px) {
+  .container {
+    width: 210px;
+    min-width: 280px;
+  }
+  .social-fields {
+    margin-left: -17rem;
+  }
+  #username {
+    width: 97%;
+  }
+  #password {
+    width: 97%;
+    padding-right: 4rem;
+  }
+  .button {
+    left: 86%;
+  }
+  .input-box .underline::before {
+    width: 97%;
+  }
+  .input-box .underline::after {
+    width: 97%;
+  }
+  h2 {
+    margin-left: 6.2rem;
+  }
+  .social-field a i {
+    width: 60px;
+  }
+  p a {
+    margin-left: -3.65rem;
   }
 }
 @media only screen and (max-width: 290px) {
-  .social-fields {
-    margin-left: -17rem;
-
+  .container {
+    width: 210px;
+    min-width: 250px;
+  }
+  p a {
+    margin-left: -5.1rem;
+  }
+  .social-field a i {
+    width: 50px;
+  }
+  h2 {
+    margin-left: 4.6rem;
   }
 }

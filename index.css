@@ -379,5 +379,15 @@ footer {
   }
   h2 {
     margin-left: 4.6rem;
+
+  }
+  p a {
+    margin-left: -5.1rem;
+  }
+  .social-field a i {
+    width: 50px;
+  }
+  h2 {
+    margin-left: 4.6rem;
   }
 }

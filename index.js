@@ -1,5 +1,8 @@
 const button = document.getElementById('btn')
 const eyeElement = document.querySelector('.fa-eye')
+const name = document.getElementById('name')
+const password = document.getElementById('password')
+const form = document.getElementById('form')
 
 button.addEventListener('click', mostrarOcultarSenha)
 
@@ -13,3 +16,4 @@ function mostrarOcultarSenha () {
         eyeElement.classList.remove('fa-eye-slash')
     }
 }
+

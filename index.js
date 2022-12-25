@@ -3,7 +3,6 @@ const eyeElement = document.querySelector('.fa-eye')
 const passwordInput = document.querySelector('#password')
 const testeInput = document.querySelector('#teste')
 const name = document.getElementById('name')
-const password = document.getElementById('password')
 const form = document.getElementById('form')
 
 

@@ -1,9 +1,10 @@
 const button = document.getElementById('btn')
 const eyeElement = document.querySelector('.fa-eye')
-const name = document.getElementById('name')
-const passwordInput = document.getElementById('password')
-const form = document.getElementById('form')
+const passwordInput = document.querySelector('#password')
 const testeInput = document.querySelector('#teste')
+const name = document.getElementById('name')
+const form = document.getElementById('form')
+
 
 button.addEventListener('click', mostrarOcultarSenha)
 
@@ -17,6 +18,7 @@ function mostrarOcultarSenha () {
         eyeElement.classList.remove('fa-eye-slash')
     }
 }
+
 passwordInput.addEventListener('keydown', (e) => {
     const capsLockIn = e.getModifierState('CapsLock')
     testeInput.style.display = capsLockIn ? 'block' : 'none'

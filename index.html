@@ -12,18 +12,19 @@
     <main class="container">
         <h2>Login</h2>
         <form action="/" id="form" method="get">
-            <div class="input-box">
+            <div class="input-box" id="box-one">
                 <input type="text" name="username" id="username" required>
                 <div class="underline"></div>     
                 <label for="username" class="input-label label-user">Username</label>
+                <span id="capsLockinname" class="capslockinName">CapsLock<i class="fa-solid fa-circle-up"></i></span>
             </div>
             
             <div class="input-box">
                 <button id="btn" class="button" type="button"><i class="fas fa-solid fa-eye"></i></button>
-                <span id="teste"><i class="fa-solid fa-check"></i></span>
                 <input type="password" name="password" id="password" required>
                 <div class="underline"></div>
                 <label for="password" class="input-label">Password</label>
+                <span id="capsLockinpassword" class="capslockinPassword">CapsLock<i class="fa-solid fa-circle-up"></i></span>
             </div>
 
                 <input type="submit" value="continue">

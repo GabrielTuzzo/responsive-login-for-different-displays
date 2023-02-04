@@ -52,6 +52,9 @@ body {
   width: 40%;
   padding-right: 4.8rem;
 }
+#box-one {
+  padding-bottom: 9px;
+}
 h2 {
   text-align: start;
   margin-left: 10rem;
@@ -231,11 +234,18 @@ footer {
 .google a {
   color: #000;
 }
-#teste {
+.capslockinPassword,
+.capslockinName {
   display: none;
   position: absolute;
-  right: 0;
-  font-size: 200px;
+  left: 0;
+  color: #414549;
+  font-size: 13.5px;
+  margin-top: 5px;
+}
+.teste-1 {
+  margin-bottom: 300px;
+  display: block;
 }
 .social-field.twitter:hover {
   background: linear-gradient(to right, #429cf0, #0084ff);
@@ -246,7 +256,11 @@ footer {
 .social-field.google:hover {
   background: linear-gradient(to right, #ffffff, #ffffff);
 }
-
+.fa-circle-up {
+  margin-left: 2.5px;
+font-size: 13px;
+color: #414549;
+}
 /*--------------------------------------------Media Query----------------------------------------------*/
 
 @media only screen and (max-width: 820px) {
